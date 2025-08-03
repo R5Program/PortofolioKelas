@@ -9,6 +9,19 @@
 * {
 	scroll-behavior: smooth;
 }
+.thumbnail-image {
+	user-select: none;
+	pointer-events: none;
+}
+img,
+video {
+	-webkit-user-drag: none;
+	user-drag: none;
+}
+body {
+	-webkit-touch-callout: none;
+}
+
 #menu a.active {
 	position: relative;
 }

@@ -24,7 +24,11 @@ const scrollBtn = el("scrollToTopBtn");
 const sections = document.querySelectorAll("section[id]");
 
 const navLinks = document.querySelectorAll(".nav-link");
-
+document.addEventListener("contextmenu", function (e) {
+	if (e.target.tagName === "IMG") {
+		e.preventDefault();
+	}
+});
 function clearActiveNav() {
 	navLinks.forEach((link) => {
 		link.classList.remove("active");
